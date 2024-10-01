@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const inputPassword = document.getElementById('password').value;
+            const correctPassword = '3.141592653589793238462643383279502884197169'; // ここに数字のパスワードを入力
+
+            if (inputPassword === correctPassword) {
+                window.location.href = 'https://www.google.com';
+            } else {
+                alert('パスワードが間違っています。');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>円周率小数点以下42桁</h1>
+    <input type="text" id="password" placeholder="パスワードを入力" pattern="\d*" inputmode="numeric">
+    <button onclick="checkPassword()">送信</button>
+</body>
+</html>
