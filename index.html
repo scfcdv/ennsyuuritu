@@ -30,7 +30,7 @@
     <script>
         function checkPassword() {
             const inputPassword = document.getElementById('password').value;
-            const correctPassword = '3.141592653589793238462643383279502884197169'; // ここに数字のパスワードを入力
+            const correctPassword = '3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231'; // ここに数字のパスワードを入力
 
             if (inputPassword === correctPassword) {
                 window.location.href = 'https://www.google.com';
@@ -41,7 +41,7 @@
     </script>
 </head>
 <body>
-    <h1>円周率小数点以下42桁</h1>
+    <h1>円周率小数点以下137桁</h1>
     <input type="text" id="password" placeholder="パスワードを入力" pattern="\d*" inputmode="numeric">
     <button onclick="checkPassword()">送信</button>
 </body>
